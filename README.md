@@ -1,3 +1,14 @@
+# Kaboodle-solutions fork of fluxxor
+
+This is a fork of fluxxor for kaboodle-solutions.
+
+### Installation
+
+```
+npm install @kaboodle-solutions/fluxxor
+```
+
+
 <div align="center">
 <img src="http://fluxxor.com/fluxxor.svg" height="350" alt="Fluxxor" title="Fluxxor">
 </div>
