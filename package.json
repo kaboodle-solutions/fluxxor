@@ -1,52 +1,55 @@
 {
-  "name": "fluxxor",
-  "version": "1.7.3",
-  "description": "Flux architecture tools for React",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/BinaryMuse/fluxxor.git"
-  },
-  "main": "index.js",
-  "scripts": {
-    "test": "npm run jshint && mocha --recursive",
-    "jshint": "jsxhint lib/ test/",
-    "build": "./script/build-fluxxor && ./script/build-examples",
-    "preview-site": "wintersmith preview -C site",
-    "build-site": "wintersmith build -C site"
-  },
+  "name": "@kaboodle-solutions/fluxxor",
+  "version": "2.0.0",
+  "description": "Flux architecture tools for React, updated for Kaboodle-solutions",
   "keywords": [
     "react",
     "flux"
   ],
-  "author": "Michelle Tilley <michelle@michelletilley.net>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kaboodle-solutions/fluxxor.git"
+  },
   "license": "MIT",
+  "author": "Michelle Tilley <michelle@michelletilley.net>",
+  "main": "index.js",
+  "scripts": {
+    "build": "./script/build-fluxxor && ./script/build-examples",
+    "build-site": "wintersmith build -C site",
+    "jshint": "jsxhint lib/ test/",
+    "preview-site": "wintersmith preview -C site",
+    "test": "npm run jshint && mocha --recursive"
+  },
+  "dependencies": {
+    "eventemitter3": "^0.1.5",
+    "lodash": "^3.10.1",
+    "object-path": "^0.6.0"
+  },
   "devDependencies": {
     "chai": "^1.9.1",
+    "contextify": "1.0.0",
     "css-loader": "^0.6.12",
     "envify": "^1.2.1",
     "jsdom": "~3.1.2",
     "json-loader": "^0.5.0",
     "jsx-loader": "^0.12.0",
-    "jsxhint": "^0.5.0",
+    "jsxhint": "0.15.1",
     "less": "^1.7.0",
     "less-loader": "^0.7.3",
-    "mocha": "^2.2.1",
+    "mocha": "6.2.3",
     "react": "^0.13.0",
     "react-router": "^0.13.0",
     "sinon": "^1.9.1",
     "sinon-chai": "^2.5.0",
     "style-loader": "^0.6.3",
+    "tcomb": "1.1.0",
     "tcomb-form": "^0.4.8",
+    "tcomb-validation": "1.0.4",
     "webpack": "^1.1.11",
-    "webpack-dev-server": "^1.2.7",
+    "webpack-dev-server": "3.11.0",
     "wintersmith": "^2.0.10",
     "wintersmith-ejs": "^0.1.4",
     "wintersmith-less": "^0.2.2"
-  },
-  "dependencies": {
-    "eventemitter3": "^0.1.5",
-    "lodash": "^3.8.0",
-    "object-path": "^0.6.0"
   },
   "jshintConfig": {
     "camelcase": true,
@@ -66,5 +69,8 @@
       "beforeEach",
       "afterEach"
     ]
+  },
+  "engines": {
+    "node": ">=6.17.1 <7.0.0"
   }
 }
